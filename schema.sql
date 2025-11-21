@@ -1,6 +1,17 @@
--- Define the database structure for patent porfolio management
+-- Define the database structure for patent portfolio maintenance analytics.
+-- This schema models:
+--   - clients (patent owners),
+--   - jurisdictions (patent offices / countries),
+--   - normalized patent records,
+--   - maintenance-fee deadlines,
+--   - and associated maintenance costs,
+-- using USPTO 2023 granted patent data as the source.
 
---	Clients -> companies or entities that own patents
+CREATE DATABASE IF NOT EXISTS ip_management;
+USE ip_management;
+
+-- Clients → companies or entities that own patents in this portfolio
+-- contact_email is optional and not populated from the USPTO dataset.
 CREATE TABLE clients (
     client_id      INT AUTO_INCREMENT PRIMARY KEY,
     client_name    VARCHAR(255) NOT NULL,
