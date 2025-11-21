@@ -15,7 +15,7 @@ The project is organized into three main SQL files:
 
 ---
 
-## 📁 Files in This Project
+## Files in This Project
 
 ### `schema.sql`
 
@@ -85,7 +85,7 @@ These queries are intended to be the “demo layer” you walk through in an int
 
 ---
 
-## 🧬 Data
+## Data
 - **Source:** USPTO 2023 annualized granted patent data.
 - **Cleaned CSV in this repo:** `USPTO 2023 Clean.csv`
 - This CSV is loaded directly into the `raw_uspto_2023` staging table defined in `schema.sql`.
