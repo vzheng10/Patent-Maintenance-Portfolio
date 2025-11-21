@@ -14,7 +14,7 @@ The goal is to simulate the kind of backend data model and queries that an IP ma
 
 **Objective**
 
-Start from the USPTO annualized patent dataset from 2023 and build a MySQL database that can answer questions like:
+Start from the USPTO annualized patent dataset and build a MySQL database that can answer questions like:
 
 - Which patents belong to which **client** (assignee) and **jurisdiction** (country)?
 - When are **maintenance fees** due for each patent?
