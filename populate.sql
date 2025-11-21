@@ -2,6 +2,21 @@
 
 USE ip_management;
 
+-- Optional: reset all normalized tables before re-populating.
+-- WARNING: This will delete existing data from costs, deadlines,
+-- patents, clients, and jurisdictions. Uncomment only if you
+-- intentionally want a clean slate.
+-- Note: I used this block while building and debugging the project
+-- to easily clear derived tables and re-run the pipeline from scratch.
+--
+-- SET FOREIGN_KEY_CHECKS = 0;
+-- TRUNCATE TABLE costs;
+-- TRUNCATE TABLE deadlines;
+-- TRUNCATE TABLE patents;
+-- TRUNCATE TABLE clients;
+-- TRUNCATE TABLE jurisdictions;
+-- SET FOREIGN_KEY_CHECKS = 1;
+
 -- Optional sanity checks on the staging table
 SHOW COLUMNS FROM raw_uspto_2023;
 SELECT * FROM raw_uspto_2023 LIMIT 2000;
