@@ -1,6 +1,6 @@
 # Patent Maintenance Portfolio Analytics (MySQL)
 
-This project models a simplified **patent portfolio management system** using real **USPTO 2023 granted patent data**. It focuses on:
+This project models a simplified **patent portfolio management system** using real **United States Patent and Trademark Office (USPTO) 2023 granted patent data**. It focuses on:
 
 - Normalizing raw USPTO patent data into a relational schema  
 - Tracking **maintenance-fee deadlines** for granted patents  
